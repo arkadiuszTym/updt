@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+ {% block display %} 
+  {% if results %}
+   <ul>
+   {% for r in results %}
+    <li><b>{{r.name}}</b> - {{ r.description  }}</li>
+   {% endfor %}
+   {% else %}
+   <h1> No results! Sorry :) </h1>
+  {% endif %}
+ {% endblock %}

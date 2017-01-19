@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block header_title %}
+   <title>Display latest Trades</title>
+{% endblock %}
+
+{% block display %} 
+
+      {% if news %}
+      <ul>
+       {% for n in news %}
+       <li><b>{{n.name}}</b>{{n.description}}</li>
+      </ul>
+    {% endfor %}
+    {% else %}
+    <p>No news found!!! :(</p>
+{% endif %}
+
+{% endblock %}
+

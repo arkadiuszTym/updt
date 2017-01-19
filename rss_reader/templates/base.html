@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	</head>
+<body>
+		{% block header_title %} 
+		 <title>Latest News Agregator</title> 
+		{% endblock %}
+{% block search %} 
+
+<form action="/search/" method="post">
+    {% csrf_token %}
+    <label>search:</label>
+    <input name='search'></input>
+    <button type='submit'>Search</button>
+</form>
+{% endblock %}
+
+{% block display %} 
+    main content goes here!
+{% endblock %}
+</body>
+</html>
+
