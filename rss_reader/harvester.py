@@ -3,10 +3,10 @@
 """
 author: developed@goodcode.co.uk
 date:
-licence: Gnu 2.0
+licence: Gnu 3.0
 description:
 
-
+use from ../manage.py harvest command
 
 """
 import feedparser
